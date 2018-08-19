@@ -28,8 +28,8 @@ module Dry
       #
       # @param [Object] value
       # @return [Object] result resolved from given `value`
-      def resolve(value)
-        @resolve.(value)
+      def resolve(value, *pattern)
+        @resolve.(value, *pattern)
       end
     end
   end
